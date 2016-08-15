@@ -166,7 +166,7 @@ __code__
     Filter: <input type="text" ng-model='filterText'/>
   </div>
   ...
-  <p ng-repeat = "quote in quotes | filter: filterText">...</p>
+  <p ng-repeat = "quote in quotes | filter: filterText track by $index">...</p>
 ```
 
 ```javascript
